@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./Login.css">
+    <!-- <script src="./login.js"></script> -->
+    <script>
+        // document.addEventListener("DOMContentLoaded", function() {
+        //     var emailInput = document.getElementById("input1");
+        //     var passwordInput = document.getElementById("input2");
+        //     var loginButton = document.getElementById("login");
+
+        //     function checkInputs() {
+        //         var emailValue = emailInput.value.trim();
+        //         var passwordValue = passwordInput.value.trim();
+
+        //         if (emailValue !== "" && passwordValue !== "") {
+        //             loginButton.style.backgroundColor = "#BBB";
+        //             loginButton.style.color = "#FFF";
+        //         } else {
+        //             loginButton.style.backgroundColor = "#FFFC00";
+        //             loginButton.style.color = "#000";
+        //         }
+        //     }
+
+        //     // Add event listeners to the input fields
+        //     emailInput.addEventListener("input", checkInputs);
+        //     passwordInput.addEventListener("input", checkInputs);
+        // });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        let emailField = document.getElementById("input1");
+        let passwordField = document.getElementById("input2");
+        let loginButton = document.getElementById("login");
+
+        function updateButtonColor() {
+            const isNotEmpty = emailField.value.trim() !== "" && passwordField.value.trim() !== "";
+
+            loginButton.style.backgroundColor = isNotEmpty ? "#FFFC00" : "#BBB";
+            loginButton.style.color = isNotEmpty ? "#000" : "#FFF";
+        }   
+
+        emailField.addEventListener("input", updateButtonColor);
+        passwordField.addEventListener("input", updateButtonColor);
+
+        updateButtonColor();
+    });
+
+
+    </script>
+</head>
+<body>
+    <!-- <section class="section"> -->
+        <div class="nav">
+            <img src="./logo/logo.png" alt="logo">
+        </div>
+        <form action="#">
+            <div class="main1">
+                <p class="welcome">
+                    Welcome Back!
+                </p>
+                <button class="googleLog">
+                    <span class="gLog">Log in Via Google</span>
+                </button>
+            </div>
+            <a href="#" id="trouble">Trouble logging in?</a><br>
+            <div class="or">
+                OR
+            </div>
+            <div class="formgrps">
+                <input class="input" id="input1" type="text" name="email" placeholder="" required>
+                <label for="email">USERNAME OR EMAL</label>
+            </div>
+            <div class="formgrps">
+                <input class="input" id="input2" type="password" name="password" placeholder="" required>
+                <label for="password">PASSWORD</label>
+            </div>
+            <div class="forgot">
+                <a href="#" id="forgot">Forgot password?</a><br>
+            </div> 
+            <button class="googleLog" id="login">
+                <span class="login">Log In</span>
+            </button>
+        </form>
+    <!-- </section> -->
+</body>
+</html>

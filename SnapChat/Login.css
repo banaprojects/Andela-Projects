@@ -1,0 +1,132 @@
+html,body{
+    margin: 0;
+}
+
+body{
+    display: grid;
+    place-items: center;
+}
+
+.nav{
+    width: 325px;
+    height: 88px;
+    flex-shrink: 0;
+    background: #FFFC00;
+    text-align: end;
+    
+}
+
+img{
+    padding: 15px;
+}
+
+form{
+    text-align: center;
+}
+
+.welcome{
+    color: #000;
+    font-family: HelveticaNeue;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.googleLog{
+    margin-bottom: 22px;
+    color:#FFFC00;
+    width: 228px;
+    height: 48px;
+    flex-shrink: 0; 
+    border-radius: 50px;
+    border: none;
+    background: #000;
+}
+
+.gLog{
+    font-size: 18px;
+}
+
+#trouble{
+    text-align: center;
+}
+
+label {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: 300ms ease;
+    color: #BBB;
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+a{
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: #000;
+    font-family: HelveticaNeue;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.or{
+    margin: 30px;
+}
+
+.formgrps{
+    margin-top: 23px;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+}
+
+.input{
+    width: 100%;
+    transition: border-color 0.2s;
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus + label, input:not(:placeholder-shown) + label {
+    transform: translateY(-20px);
+    font-size: 9px;
+}
+
+.forgot{
+    text-align: end;
+}
+
+#forgot{
+    color: #0D46D9;
+    
+}
+
+#login{
+    margin-top: 25px;
+    background: #BBB;
+    color: #FFF;
+}
+
+/* #login:disabled{
+    */
+/* } */
+
+/* input:valid + input:valid + #login:disabled{
+    background: #FFFC00;
+    color: #000;
+} */
+
