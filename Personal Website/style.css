@@ -1,0 +1,140 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    background-color: rgb(239, 227, 227);
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    background-color: rgb(213, 182, 182);
+}
+
+.logo{
+    font-size: 40px;
+    padding-left: 20px;
+    flex: 2;
+    background-color: white;
+}
+
+.OtherTabs{
+    height: 100%;
+    flex: 1;
+    transition: 200ms ease-in-out;
+}
+
+.OtherTabs:hover {
+    background-color:rgb(55, 1, 1);
+}
+
+.OtherTabs:hover > .tab{
+    color: white;
+    font-size: 20px;
+}
+
+.tab{
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 1000;
+    font-size: larger;
+    color:rgb(55, 1, 1)
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.section{
+    margin-top: 7px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(120, 115, 115);
+}
+
+.description{
+    font-size: large;
+}
+
+button{
+    width: 120px;
+    height: 40px;
+    background-color: rgb(55, 1, 1); 
+    color: white;
+    margin-left: 250px;
+    margin-top: 100px;
+    border-style: none;
+    border-radius: 20px;
+    transition: 500ms ease;
+}
+
+button:hover{
+    background-color: rgb(213, 182, 182);
+    color: rgb(55, 1, 1);
+}
+
+.image{
+    box-shadow: 5px 5px 5px rgb(120, 115, 115);
+}
+
+#about{
+    display: flex;
+    height: 600px;
+}
+
+.about-text{
+    background-color: rgb(213, 182, 182);
+    padding-left: 10px;
+    padding-top: 15px;
+    width: 750px;
+    height: 85%;
+    margin: 70px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(120, 115, 115);
+}
+
+#skills{
+    background-color: rgb(213, 182, 182);
+    height: 350px;
+}
+
+.lang-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.language {
+    height: 75px;
+    text-align: center;
+    background-color: white;
+}
+
+.language > img {
+    width: 190px;
+    height: 150px;
+}
+
+i{
+    
+    font-size: 12px;
+}
+
+#my-work{
+    height: 400px;
+}
+
+#contacts{
+    height: 150px;
+    background-color:rgb(213, 182, 182) ;
+}
+
+#name, .what-i-do{
+    color: rgb(55, 1, 1);
+}
+
+#name{
+    font-size: 55px;
+}
